@@ -16,14 +16,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
-      # Node.js 16을 사용하도록 설정
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          
       # 뱀 생성
       - uses: Platane/snk@master
         id: snake-gif
